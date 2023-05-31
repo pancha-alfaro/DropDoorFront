@@ -12,6 +12,11 @@ import { ProductsComponent } from './pages/products/products.component';
 import { BlogsComponent } from './pages/blogs/blogs.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BlogwidgetComponent } from './components/blogwidget/blogwidget.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { PaymentComponent } from './pages/payment/payment.component';
     ProductsComponent,
     BlogsComponent,
     AboutusComponent,
-    PaymentComponent
+    PaymentComponent,
+    HomeComponent,
+    NotfoundComponent,
+    HeaderComponent,
+    FooterComponent,
+    BlogwidgetComponent
   ],
   imports: [
     BrowserModule,
