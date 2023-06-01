@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.searchbar{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    background-image: url('src/assets/home/banner.jpg');
+    padding: 80px;
+    background-size: cover;
+    height: 35vh;
+    
+}
+
+.searchboxtext{
+    color: beige;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+.btn-primary{
+	background-color: #FF63AB;
+	
+}
+
+.searchicon{
+    width: 30px;
+}
+
+.triadpicture {
+    width: 70%;
+    margin-left: 120px;
+}
+
+.triadtext {
+    padding: 10px;
+    margin-right: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
