@@ -9,6 +9,8 @@ import { BlogsComponent } from './pages/blogs/blogs.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { DataComponent } from './pages/data/data.component';
+import { ProductsdataComponent } from './pages/productsdata/productsdata.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path: 'blog', component:BlogsComponent},
   {path: 'aboutus', component: AboutusComponent},
   {path: 'checkout', component: PaymentComponent},
+  {path:'users', component: DataComponent},
+  {path: 'productlist', component: ProductsdataComponent},
   {path: '**', component: NotfoundComponent}
 ];
 

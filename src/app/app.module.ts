@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +18,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BlogwidgetComponent } from './components/blogwidget/blogwidget.component'
+import { BlogwidgetComponent } from './components/blogwidget/blogwidget.component';
+import { DataComponent } from './pages/data/data.component';
+import { ProductsdataComponent } from './pages/productsdata/productsdata.component'
 
 @NgModule({
   declarations: [
@@ -34,11 +38,15 @@ import { BlogwidgetComponent } from './components/blogwidget/blogwidget.componen
     NotfoundComponent,
     HeaderComponent,
     FooterComponent,
-    BlogwidgetComponent
+    BlogwidgetComponent,
+    DataComponent,
+    ProductsdataComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
