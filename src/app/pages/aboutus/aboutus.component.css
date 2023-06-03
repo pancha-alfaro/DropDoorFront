@@ -1,0 +1,28 @@
+/* Estilos para el contenedor principal */
+.delivery-total {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px #FF63AB;
+}
+
+/* Estilos para el encabezado */
+.delivery-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FF63AB;
+}
+
+/* Estilos para el contenido */
+.delivery-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+
+}
