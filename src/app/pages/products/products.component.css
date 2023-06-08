@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* .banner {
+    /* padding: 20px; */
+    /* text-align: center; */
+  /* } */ 
+   
+  .dropdown {
+    margin-bottom: 80px;
+  }
+  
+  marquee {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif cursive ;  /* Cambia la fuente a Arial o cualquier otra fuente sans-serif */
+    font-size: 30px; /* Cambia el tamaño de fuente a 24 píxeles */
+  }
