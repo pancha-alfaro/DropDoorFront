@@ -1,11 +1,15 @@
+//Se importa el decorador 'Injectable" que marca esta clase como un "Injectable service" (funcionalidad que puede ser compartida a travez de multiples componentes)
 import { Injectable } from '@angular/core';
+//HttpClient nos deja hacer http requests
 import { HttpClient } from '@angular/common/http';
+//Se importa la interface de User (model)
 import { User } from '../models/users';
 
 @Injectable({
   providedIn: 'root'
 })
 
+//define la clase BackendService para poder importarlos en otros componentes.
 export class BackendService {
 
   constructor(private http: HttpClient) {

@@ -20,7 +20,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BlogwidgetComponent } from './components/blogwidget/blogwidget.component';
 import { DataComponent } from './pages/data/data.component';
-import { ProductsdataComponent } from './pages/productsdata/productsdata.component'
+import { ProductsdataComponent } from './pages/productsdata/productsdata.component';
+import { OpinionsComponent } from './pages/opinions/opinions.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ProductsdataComponent } from './pages/productsdata/productsdata.compone
     FooterComponent,
     BlogwidgetComponent,
     DataComponent,
-    ProductsdataComponent
+    ProductsdataComponent,
+    OpinionsComponent
   ],
   imports: [
     BrowserModule,

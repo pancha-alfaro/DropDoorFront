@@ -11,6 +11,7 @@ import { PaymentComponent } from './pages/payment/payment.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { DataComponent } from './pages/data/data.component';
 import { ProductsdataComponent } from './pages/productsdata/productsdata.component';
+import { OpinionsComponent } from './pages/opinions/opinions.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'checkout', component: PaymentComponent},
   {path:'users', component: DataComponent},
   {path: 'productlist', component: ProductsdataComponent},
+  {path: 'comentarios', component: OpinionsComponent},
   {path: '**', component: NotfoundComponent}
 ];
 
