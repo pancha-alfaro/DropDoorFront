@@ -1,0 +1,73 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Opiniones</span>
+    </div>
+  </nav>
+  
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <form #opinionsForm="ngForm" (ngSubmit)="addOpinion(opinionsForm)">
+              <input
+                type="hidden"
+                name="_id"
+                [(ngModel)]="opinionsbackService.selectedOpinion._id"
+              />
+  
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre del Usuario"
+                  [(ngModel)]="opinionsbackService.selectedOpinion.name"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                
+                <textarea mdbInput class="form-control" id="textAreaExample" rows="4" name="input"
+                placeholder="Comentario"
+                [(ngModel)]="opinionsbackService.selectedOpinion.input" ></textarea>
+                    
+              </div>
+
+  
+              <button class="btn btn-primary mr-2" (click)="resetForm(opinionsForm)">
+                Clear
+              </button>
+  
+              <button class="btn btn-secondary m-2">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-8">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Comentario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let opinion of opinionsbackService.opinion">
+              <td>{{ opinion.name }}</td>
+              <td>{{ opinion.input }}</td>
+              
+              <td>
+                <button class="btn btn-secondary" (click)="editOpinion(opinion)">
+                  Edit
+                </button>
+                <button class="btn btn-danger" (click)="deleteOpinion(opinion._id)">
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+.card {
+    border: none;
+  }
+
+
+.bloglogo{
+    width: 30%;
+    flex-direction: column;
+}
+
+.bannertext{
+    font-family: 'Anton', sans-serif;
+    color: #FF63AB;
+    text-align: center;
+    font-size: 10rem;
+}
