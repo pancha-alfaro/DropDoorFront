@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'checkout', component: PaymentComponent},
   {path:'users', component: DataComponent},
   {path: 'productlist', component: ProductsdataComponent},
-  {path: '**', component: NotfoundComponent}
+  {path: '**', component: NotfoundComponent},
 ];
 
 @NgModule({

@@ -8,19 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProductsComponent implements OnInit{
  
   @Input()  products: any[] = [
-    { name: 'McDonalds', image: 'McDonalds.jpg' },
-    { name: 'KFC', image: 'KFC.jpg' },
-    { name: 'Noa Sushi', image: 'NoaSushi.jpg' },
-    { name: 'Dominos', image: 'Dominos.jpg' },
-    { name: 'Sopitas y Frijolada', image: 'SopitasyFrijolada.jpg' },
-    { name: 'Fruteria Pepita', image: 'FruteriaPepita.jpg' },
-    // Agrega más productos aquí según tus necesidades
+    { name: 'McDonalds', image: 'McDonalds.jpg', url: "https://www.mcdonalds.com.co/" },
+    { name: 'KFC', image: 'KFC.jpg', url: "https://www.kfc.co/menu" },
+    { name: 'Noa Sushi', image: 'NoaSushi.jpg', url: "https://web.facebook.com/NoaSushiBaq/" },
+    { name: 'Dominos', image: 'Dominos.jpg', url: "https://www.dominos.com.co/" },
+    { name: 'Sopitas y Frijolada', image: 'SopitasyFrijolada.jpg', url: "https://web.facebook.com/RestauranteSopitas/" },
+    { name: 'Fruteria Monkys', image: 'Monky.png', url: "https://www.fruteriamonkys.com/" },
   ];
-
   
   constructor() { }
 
-  ngOnInit() {
+   ngOnInit() {
   }
 
 }
